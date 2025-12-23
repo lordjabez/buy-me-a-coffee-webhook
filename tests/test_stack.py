@@ -8,7 +8,7 @@ def test_function_created():
     stack = bmc_webhook.BuyMeACoffeeWebhook(app, 'Test')
     template = cdk.assertions.Template.from_stack(stack)
     template.has_resource_properties('AWS::Lambda::Function', {
-        'Runtime': 'python3.9',
+        'Runtime': 'python3.14',
         'MemorySize': 128,
         'Timeout': 5,
     })

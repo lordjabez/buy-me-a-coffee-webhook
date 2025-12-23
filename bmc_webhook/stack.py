@@ -4,7 +4,7 @@ from aws_cdk import Arn, CfnOutput, Duration, Stack
 from aws_cdk import aws_iam, aws_lambda
 
 
-_runtime = aws_lambda.Runtime.PYTHON_3_9
+_runtime = aws_lambda.Runtime.PYTHON_3_14
 _code_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'lambda')
 
 _parameter_name = 'BMCWebhookSecret'
